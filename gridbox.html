@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+        .konten{
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            /* grid kolom adalah banyaknya kolom dari satu page */
+            /* grid-template-rows: repeat(20,1fr); */
+            /* row adalah panjang row sebanyak 20 */
+            grid-template-rows: 50px 100px 80px 100px 100px 100px;
+            grid-gap: 10px;
+        }
+        .konten div{
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight:bolder;
+        }
+        .kotak1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            /* grid-row-start: 1; */
+            /* grid-row-end: 4; */
+        }
+        .kotak2{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            /* grid-row-start: 4; */
+            /* grid-row-end: 6; */
+        }
+        .kotak3{
+        }
+        .kotak7{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+        .kotak8{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            /* grid-row-start: 7; */
+            /* grid-row-end: 10; */
+        }
+        .kotak9{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            /* grid-row-start: 10; */
+            /* grid-row-end: 13; */
+        }
+        .kotak10{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            /* grid-row-start: 13; */
+            /* grid-row-end: 18; */
+        }
+    </style>
+</head>
+<body>
+    <div class="konten">
+        <div class="kotak1">Company logo and slogan(1)</div>
+        <div class="kotak2">Header(2)</div>
+        <div class="kotak3">Navigation(3)</div>
+        <div class="kotak4">(4)</div>
+        <div class="kotak5">(5)</div>
+        <div class="kotak6">(6)</div>
+        <div class="kotak7">About(7)</div>
+        <div class="kotak8">Quick links(8)</div>
+        <div class="kotak9">Quick links(9)</div>
+        <div class="kotak10">Sit plane and copyright info(10)</div>
+    </div>
+</body>
+</html>
